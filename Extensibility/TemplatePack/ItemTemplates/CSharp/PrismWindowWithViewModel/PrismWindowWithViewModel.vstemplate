@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:sdk="http://schemas.microsoft.com/developer/vstemplate-sdkextension/2010">
+  <TemplateData>
+    <Name>Prism Window with ViewModel (WPF)</Name>
+    <Description>Creates a WPF Window with Prism ViewModel</Description>
+    <Icon>PrismWindowWithViewModel.ico</Icon>
+    <TemplateID>dd1f2ca3-5a61-4135-8b72-9622a2fab5c1</TemplateID>
+    <ProjectType>CSharp</ProjectType>
+    <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <DefaultName>PrismWindow.xaml</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem SubType="Designer" TargetFileName="Views\$fileinputname$.xaml" ReplaceParameters="true">PrismWindow.xaml</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="Views\$fileinputname$.xaml.cs" ReplaceParameters="true">PrismWindow.xaml.cs</ProjectItem>
+    <ProjectItem TargetFileName="ViewModels\$fileinputname$ViewModel.cs" ReplaceParameters="true">PrismViewModel.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>

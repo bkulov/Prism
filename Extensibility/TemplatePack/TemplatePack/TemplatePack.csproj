@@ -169,6 +169,13 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
+    <ProjectReference Include="..\ItemTemplates\CSharp\PrismWindowWithViewModel\PrismWindowWithViewModel.csproj">
+      <Project>{23ef9b68-fa9a-4cce-8320-92f46697f6da}</Project>
+      <Name>PrismWindowWithViewModel</Name>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <VSIXSubPath>ItemTemplates</VSIXSubPath>
+    </ProjectReference>
     <ProjectReference Include="..\ItemTemplates\CSharp\Wpf\PrismUserControl\PrismUserControl.csproj">
       <Project>{e6956c66-80b9-4da0-af00-a682f72af36d}</Project>
       <Name>PrismUserControl</Name>
