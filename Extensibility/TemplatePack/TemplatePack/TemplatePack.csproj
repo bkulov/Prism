@@ -190,6 +190,10 @@
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
     </ProjectReference>
+    <ProjectReference Include="..\PrismViewViewModelWizard\PrismViewViewModelWizard.csproj">
+      <Project>{5f4e575e-9761-4349-a5db-305928fe5eb1}</Project>
+      <Name>PrismViewViewModelWizard</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProjectTemplates\CSharp\Forms\PrismUnityApp\PrismUnityApp.csproj">
       <Project>{A999803B-13A8-42FA-935A-EB5BD81C5F4D}</Project>
       <Name>PrismUnityApp</Name>
