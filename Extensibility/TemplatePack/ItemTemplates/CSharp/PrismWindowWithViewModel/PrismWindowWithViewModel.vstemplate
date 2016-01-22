@@ -8,7 +8,7 @@
     <ProjectType>CSharp</ProjectType>
     <RequiredFrameworkVersion>4.5</RequiredFrameworkVersion>
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
-    <DefaultName>PrismWindow.xaml</DefaultName>
+    <DefaultName>PrismWindowWithViewModel.xaml</DefaultName>
   </TemplateData>
   <TemplateContent>
     <References>
@@ -16,8 +16,12 @@
         <Assembly>System</Assembly>
       </Reference>
     </References>
-    <ProjectItem SubType="Designer" TargetFileName="Views\$fileinputname$.xaml" ReplaceParameters="true">PrismWindow.xaml</ProjectItem>
-    <ProjectItem SubType="Code" TargetFileName="Views\$fileinputname$.xaml.cs" ReplaceParameters="true">PrismWindow.xaml.cs</ProjectItem>
-    <ProjectItem TargetFileName="ViewModels\$fileinputname$ViewModel.cs" ReplaceParameters="true">PrismViewModel.cs</ProjectItem>
+    <ProjectItem SubType="Designer" TargetFileName="$viewsfolderlocation$\$fileinputname$View.xaml" ReplaceParameters="true">PrismWindow.xaml</ProjectItem>
+    <ProjectItem SubType="Code" TargetFileName="$viewsfolderlocation$\$fileinputname$View.xaml.cs" ReplaceParameters="true">PrismWindow.xaml.cs</ProjectItem>
+    <ProjectItem TargetFileName="$viewmodelsfolderlocation$\$fileinputname$ViewModel.cs" ReplaceParameters="true">PrismViewModel.cs</ProjectItem>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>PrismViewViewModelWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5db7280b00fd63e9</Assembly>
+    <FullClassName>PrismViewViewModelWizard.PrismViewViewModelWizard</FullClassName>
+  </WizardExtension>
 </VSTemplate>

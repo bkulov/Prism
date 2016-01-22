@@ -28,7 +28,8 @@ namespace PrismViewViewModelWizard
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
-            replacementsDictionary.Add("$greeting$", "Hello from Prism ViewViewModel Item Wizard!");
+            replacementsDictionary.Add("$viewsfolderlocation$", "Views");
+            replacementsDictionary.Add("$viewmodelsfolderlocation$", "ViewModels");
         }
 
         public bool ShouldAddProjectItem(string filePath)
